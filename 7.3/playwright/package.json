@@ -1,5 +1,5 @@
 {
-  "name": "jsaqa_3_2",
+  "name": "playwright",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.12.3",
-    "playwright": "^1.12.3"
+    "@playwright/test": "^1.29.1",
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "playwright": "^1.29.1"
   }
 }
