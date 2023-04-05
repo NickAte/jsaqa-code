@@ -1,14 +1,24 @@
 {
-  "name": "cypress-test",
+  "name": "hw6cypress7.6-1",
   "version": "1.0.0",
-  "description": "first tests with Cypress",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run",
+    "test:ChromeHeaded": "npx cypress run --browser chrome --headed --config-file cypress.config.js",
+		"test:ChromeHeadless": "npx cypress run --browser chrome --headless --config-file cypress.config.js",
+		"test:ChromeMobileheaded": "npx cypress run --browser chrome --headed --config-file cypress.config.mobile.js",
+    "test:ChromeMobileHeadless": "npx cypress run --browser chrome --headless --config-file cypress.config.mobile.js",
+    "test:EdgeHeaded": "npx cypress run --browser edge --headed --config-file cypress.config.js",
+		"test:EdgeHeadless": "npx cypress run --browser edge --headless --config-file cypress.config.js",
+    "test:ElectronMobileHeaded": "npx cypress run --browser electron  --headed --config-file cypress.config.mobile.js",
+		"test:ElectronMobileHeadless": "npx cypress run --browser electron  --headless --config-file cypress.config.mobile.js"
   },
-  "author": "OM",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "cypress": "^8.3.0"
+  "devDependencies": {
+    "cypress": "^12.3.0",
+		"@faker-js/faker": "^7.6.0"
   }
 }
