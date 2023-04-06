@@ -35,7 +35,7 @@ module.exports = {
 	},
 	clickSeat: async function (page, row, seat) {
 		try {
-			let selector = `main > section div:nth-child(${row}) > span:nth-child(${seat})`;
+			let selector = `main > section .buying-scheme__chair_standart:not(.buying-scheme__chair_taken):not(.buying-scheme__chair_selected)`;
 			await page.waitForSelector(selector);
 			await page.click(selector);
 		} catch (error) {
@@ -44,7 +44,7 @@ module.exports = {
 	},
 	clickSeatVip: async function (page, number) {
 		try {
-			let selector = `section  div:nth-child(${number}) > span.buying-scheme__chair.buying-scheme__chair_vip`;
+			let selector = `section  .buying-scheme__chair_vip:not(.buying-scheme__chair_taken)`;
 			await page.waitForSelector(selector);
 			await page.click(selector);
 		} catch (error) {
