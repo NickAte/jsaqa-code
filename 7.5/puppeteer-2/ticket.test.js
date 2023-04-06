@@ -47,9 +47,9 @@ describe("Ticket booking", () => {
 
 	test("Positive - Should book VIP seat", async () => {
 		const data = generateData();
-		const moviNumber = 2;
+		const moviNumber = 1;
 		const timeNumber = 2;
-		const vipSeatNumber = 3;
+		const vipSeatNumber = 10;
 		await clickDay(page, data);
 		await clickMoviTime(page, moviNumber, timeNumber);
 		await page.waitForSelector("h1");
